@@ -1,0 +1,15 @@
+{
+  "name": "switchname",
+  "version": "1.0.0",
+  "main": "bin/index.js",
+  "author": "@felixfong227 <moongod101@hotmail.com> (https://felixfong227.ml)",
+  "license": "MIT",
+  "description": "Tools that help you switching naming method with one command",
+  "keywords": [
+    "name",
+    "naming",
+    "format",
+    "formatting",
+    "string"
+  ]
+}

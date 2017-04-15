@@ -19,5 +19,17 @@ module.exports = {
     },
     trim: function(string){
         return string.replace(/ /g, '');
+    },
+    hyper: function(string,options){
+        var mainObject = require('./index');
+        var output = "";
+        options.forEach(function(option){
+            if(output == ""){
+                output = mainObject[option](string);
+            }else{
+                output = mainObject[option](output);
+            }
+        });
+        return output;
     }
 };

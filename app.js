@@ -15,3 +15,10 @@ console.log(switchname.lowercase(string));
 
 // This is a string | This_is_a_string | This-is-a-string > Thisisastring
 console.log(switchname.trim(string));
+
+
+// This is a string | This_is_a_string | This-is-a-string > $ Anything you want
+console.log(switchname.hyper(string, [
+    'trim',
+    'uppercase'
+]));

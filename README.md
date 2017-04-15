@@ -14,3 +14,9 @@ This is a string > `this is a string`
 
 ## trim
 This is a string > `Thisisastring`
+
+## trim
+This is a string > `Thisisastring`
+
+## hyper
+Max up all the mehtod together

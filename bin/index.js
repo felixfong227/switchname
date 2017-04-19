@@ -9,7 +9,7 @@ module.exports = {
         return output;
     },
     underscore: function(string){
-        return string.replace(/ |-/g, '_');
+        return string.replace(/ /g, '_');
     },
     uppercase: function(string){
         return string.toUpperCase();

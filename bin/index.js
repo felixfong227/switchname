@@ -31,5 +31,41 @@ module.exports = {
             }
         });
         return output;
+    },
+    asciicode: function(string){
+        var output = [];
+        string.split('').forEach(function(char){
+            output.push({
+                character: char,
+                code: char.charCodeAt()
+            });
+        });
+        return output;
+    },
+    romanumber: function(number){
+        var output = [];
+        var romanNumeral = require('roman-numeral');
+        function action(num, single){
+            if(!single){
+                output.push({
+                    number: num,
+                    romaNumber: romanNumeral.convert(num)
+                });
+            }else{
+                output = {
+                    number: num,
+                    romaNumber: romanNumeral.convert(num)
+                }
+            }
+        }
+        if(typeof number == 'object'){
+            number.forEach(function(num){
+                action(num, false);
+            });
+        }else{
+            action(number, true);
+        }
+        return output;
     }
+
 };

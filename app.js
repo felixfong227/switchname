@@ -16,9 +16,23 @@ console.log(switchname.lowercase(string));
 // This is a string | This_is_a_string | This-is-a-string > Thisisastring
 console.log(switchname.trim(string));
 
-
-// This is a string | This_is_a_string | This-is-a-string > $ Anything you want
+// This is a string | This_is_a_string | This-is-a-string > Anything you want
 console.log(switchname.hyper(string, [
     'trim',
     'uppercase'
 ]));
+
+// This is a string | This_is_a_string | This-is-a-string > [Array of ascii code]
+console.log(switchname.asciicode(string));
+
+// [Array of numbers] > [output]
+console.log(switchname.romanumber([
+    1,
+    2,
+    3,
+    4,
+    5
+]));
+
+// [Number] > [Object]
+console.log(switchname.romanumber(1))

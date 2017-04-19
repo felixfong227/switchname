@@ -26,3 +26,19 @@ const renderedString = switchname.hyepr(string, [
 ]);
 // THIS_IS_A_STRING
 ```
+
+# ascii [Object]
+Turn your `string` or `number` into ascii code
+
+# romanumber [Object]
+Turn your `number` into roma number
+
+Accept
+- number
+- array of numbers
+```javascript
+const switchname = require('switchname');
+const string = "This is an string";
+const renderedNumber = switchname.romanumber(5); // > V [Object]
+const renderedArrayOfNumbers = switchname.romanumber([5,6]); // > V,VI[Object]
+```

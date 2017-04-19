@@ -19,4 +19,13 @@ This is a string > `Thisisastring`
 This is a string > `Thisisastring`
 
 ## hyper
-Max up all the mehtod together
+Max up all the mehtod you want
+```javascript
+const switchname = require('switchname');
+const string = "This is an string";
+const renderedString = switchname.hyepr(string, [
+    'uppercase',
+    'underscore'
+]);
+// THIS_IS_A_STRING
+```

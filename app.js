@@ -1,10 +1,15 @@
 var switchname = require('./bin/index');
 var string = "This is a string";
+var markdownString = `# Mark down
+Mark down is awesome
+- Is look nice
+- It feel clean
+- GitHub use it lol`;
 
 // This is a string | This_is_a_string | This-is-a-string > thisIsAString
 console.log(switchname.camelcase(string));
 
-// This is a string | This-is-a-string > This_is_a_string
+// This is a string > This_is_a_string
 console.log(switchname.underscore(string));
 
 // This is a string | This_is_a_string | This-is-a-string > THIS IS A STRING
@@ -34,5 +39,7 @@ console.log(switchname.romanumber([
     5
 ]));
 
-// [Number] > [Object]
+// // [Number] > [Object]
 console.log(switchname.romanumber(1))
+
+console.log(switchname.markdown(markdownString));

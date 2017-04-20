@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+marked@^0.3.6:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.6.tgz#b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7"
+
 roman-numeral@^0.2.6:
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/roman-numeral/-/roman-numeral-0.2.6.tgz#03fecb55ac57150015cf1e200db31d83b8c33513"

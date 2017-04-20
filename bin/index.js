@@ -1,7 +1,7 @@
 module.exports = {
     camelcase: function(string){
         var output = "";
-        string.split(/ |_|-/g).forEach(function(char){
+        string.split(/ /g).forEach(function(char){
             char = char.replace(char.split('')[0], char.split('')[0].toUpperCase());
             output += char;
         });
@@ -66,6 +66,9 @@ module.exports = {
             action(number, true);
         }
         return output;
+    },
+    markdown: function(string){
+        return require('marked')(string);
     }
 
 };

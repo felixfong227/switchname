@@ -42,3 +42,13 @@ const string = "This is an string";
 const renderedNumber = switchname.romanumber(5); // > V [Object]
 const renderedArrayOfNumbers = switchname.romanumber([5,6]); // > V,VI[Object]
 ```
+
+# Mark down
+Turn the mark down string in to HTML code
+```
+MD:
+# Pony
+
+HTML:
+<h1>Pony</h1>
+```

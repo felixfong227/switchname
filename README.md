@@ -27,7 +27,7 @@ const renderedString = switchname.hyepr(string, [
 // THIS_IS_A_STRING
 ```
 
-# ascii [Object]
+# asciicode [Object]
 Turn your `string` or `number` into ascii code
 
 # romanumber [Object]

@@ -1,7 +1,16 @@
 # Switchname
 
-## camelcase
+## camelcase (arguments)
 This is a string > `thisIsAString`
+```javascript
+const switchname = require('switchname');
+const string = "This is an string";
+console.log(switchname.camelcase(string)); || console.log(switchname.camelcase(string, false));
+// thisIsAnString
+
+console.log(switchname.camelcase(string, true));
+// ThisIsAnString
+```
 
 ## underscore
 This is a string > `This_is_a_string`

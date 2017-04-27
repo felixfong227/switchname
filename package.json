@@ -1,6 +1,6 @@
 {
   "name": "switchname",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "main": "bin/index.js",
   "author": "@felixfong227 <moongod101@hotmail.com> (http://felixfong227.ml)",
   "license": "MIT",

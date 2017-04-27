@@ -1,4 +1,4 @@
-var switchname = require('./bin/index');
+var switchname = require('./src/index');
 var string = "This is a string";
 var markdownString = `# Mark down
 Mark down is awesome
@@ -7,7 +7,7 @@ Mark down is awesome
 - GitHub use it lol`;
 
 // This is a string | This_is_a_string | This-is-a-string > thisIsAString
-console.log(switchname.camelcase(string));
+console.log(switchname.camelcase(string, true));
 
 // This is a string > This_is_a_string
 console.log(switchname.underscore(string));

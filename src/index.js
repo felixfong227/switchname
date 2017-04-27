@@ -1,11 +1,17 @@
 module.exports = {
-    camelcase: function(string){
+    camelcase: function(string, uppercase){
+        if(typeof uppercase == 'undefined'){
+            // Default
+            uppercase = false;
+        }
         var output = "";
         string.split(/ /g).forEach(function(char){
             char = char.replace(char.split('')[0], char.split('')[0].toUpperCase());
             output += char;
         });
-        output = output.replace(output.split('')[0], output.split('')[0].toLowerCase());
+        if(!uppercase){
+            output = output.replace(output.split('')[0], output.split('')[0].toLowerCase());
+        }
         return output;
     },
     underscore: function(string){
